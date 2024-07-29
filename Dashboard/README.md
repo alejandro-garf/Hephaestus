@@ -55,16 +55,6 @@ To use this project, follow these steps:
 
 - **Chart.js**: The project uses Chart.js for creating interactive charts. The library is included via a CDN link in the `index.html` file.
 
-## Future Enhancements
-
-- **Interactivity**: Add more interactive elements such as filters and search functionality for the table.
-- **Responsive Design**: Improve responsiveness to ensure the dashboard looks good on all devices.
-- **Backend Integration**: Connect the dashboard to a backend to fetch real-time data.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
 ## License
 
 This project is open-source and available under the MIT License.
