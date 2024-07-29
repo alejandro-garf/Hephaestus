@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar section -->
+    <div class="sidebar">
+        <h2>Hephaestus</h2>
+        <ul>
+            <li>DASHBOARD</li>
+            <li>PROFILE</li>
+            <li>NOTIFICATIONS</li>
+            <li>DEVICES</li>
+            <li>LOGOUT</li>
+        </ul>
+    </div>
+    <!-- Main content section -->
+    <div class="content">
+        <!-- Header section -->
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+        <!-- Cards section -->
+        <div class="flex-container">
+            <div class="flex-item card">
+                <h3>Active</h3>
+                <p>1</p>
+            </div>
+            <div class="flex-item card">
+                <h3>Full</h3>
+                <p>1</p>
+            </div>
+            <div class="flex-item card">
+                <h3>Offline</h3>
+                <p>0</p>
+            </div>
+        </div>
+        <!-- Table and Pie Chart section -->
+        <div class="flex-container">
+            <div class="flex-item scrollable-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Seabin ID</th>
+                            <th>Last Emptied</th>
+                            <th>Capacity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" class="white-link">0027</a></td>
+                            <td>7/20/24</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0028</a></td>
+                            <td>7/21/24</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0029</a></td>
+                            <td>7/22/24</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0030</a></td>
+                            <td>7/23/24</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0031</a></td>
+                            <td>7/24/24</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0032</a></td>
+                            <td>7/25/24</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0033</a></td>
+                            <td>7/26/24</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0034</a></td>
+                            <td>7/27/24</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0035</a></td>
+                            <td>7/28/24</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0036</a></td>
+                            <td>7/29/24</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0037</a></td>
+                            <td>7/30/24</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="white-link">0038</a></td>
+                            <td>7/31/24</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Pie Chart Container -->
+            <div class="flex-item pie-chart-card">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <!-- Bar Chart Container -->
+        <div class="bar-chart">
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
