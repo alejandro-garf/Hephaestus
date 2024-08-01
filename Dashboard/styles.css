@@ -156,6 +156,11 @@ tr:hover {
     margin-bottom: 10px;
 }
 
+.scrollable-table-container {
+    max-height: 150px; /* Adjust height as needed */
+    overflow-y: auto;
+}
+
 .history table {
     width: 100%;
     border-collapse: collapse;
@@ -181,9 +186,10 @@ tr:hover {
 .back-button a {
     text-decoration: none;
     font-size: 24px;
+    color: white; /* Change to white */
+    font-size: 32px; /* Increase font size */
 }
 
 .back-button a:hover {
     text-decoration: underline;
 }
-
