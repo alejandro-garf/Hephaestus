@@ -173,8 +173,12 @@ tr:hover {
 }
 
 .chart-container {
-    margin: 20px 0;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    height: 300px; /* Adjust height as needed */
 }
 
 .custom-legend {
