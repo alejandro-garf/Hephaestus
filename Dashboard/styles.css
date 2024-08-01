@@ -149,7 +149,10 @@ tr:hover {
 }
 
 .history {
-    margin-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .history h3 {
@@ -157,8 +160,9 @@ tr:hover {
 }
 
 .details-table-container {
-    max-height: 150px; /* Adjust height as needed */
+    flex-grow: 1;
     overflow-y: auto;
+    margin-top: 10px;
 }
 
 .history table {
