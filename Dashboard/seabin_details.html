@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seabin Details</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -18,21 +19,73 @@
         </ul>
     </div>
     <div class="content">
-        <div class="header">
-            <h1>Seabin Details</h1>
-        </div>
-        <div class="details">
-            <p id="seabinId"></p>
-            <!-- Additional Seabin details can be added here -->
+        <div class="details-card">
+            <h1>ID: <span id="seabinId">0027</span></h1>
+            <p>Status: <span id="status">Active</span></p>
+            <p>Capacity: <span id="capacity">80%</span></p>
+            <p>Last Filled: <span id="lastFilled">7/20/24</span></p>
+            <div class="chart-container">
+                <canvas id="seabinChart"></canvas>
+            </div>
+            <div class="history">
+                <h3>History:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Full</td>
+                            <td>7/15/24</td>
+                        </tr>
+                        <tr>
+                            <td>Full</td>
+                            <td>7/10/24</td>
+                        </tr>
+                        <tr>
+                            <td>Full</td>
+                            <td>7/07/24</td>
+                        </tr>
+                        <tr>
+                            <td>Full</td>
+                            <td>6/28/24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="back-button">
+                <a href="index.html">←</a>
+            </div>
         </div>
     </div>
     <script>
-        // Extract Seabin ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const seabinId = urlParams.get('id');
+        document.getElementById('seabinId').innerText = seabinId;
         
-        // Display Seabin ID on the page
-        document.getElementById('seabinId').innerText = 'Seabin ID: ' + seabinId;
+        // Chart.js configuration
+        const ctx = document.getElementById('seabinChart').getContext('2d');
+        const seabinChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Capacity Used', 'Capacity Remaining'],
+                datasets: [{
+                    data: [80, 20],
+                    backgroundColor: ['#36A2EB', '#FF6384'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
     </script>
 </body>
 </html>
