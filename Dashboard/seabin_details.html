@@ -59,9 +59,9 @@
                     </table>
                 </div>
             </div>
-            <div class="back-button">
-                <a href="index.html">←</a>
-            </div>
+        </div>
+        <div class="back-button">
+            <a href="index.html">←</a>
         </div>
     </div>
     <script>
@@ -84,7 +84,11 @@
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'top',
+                        position: 'bottom', // Position legend at the bottom for even alignment
+                        labels: {
+                            boxWidth: 20, // Size of the color boxes
+                            padding: 20 // Padding between the text and color boxes
+                        }
                     }
                 }
             }

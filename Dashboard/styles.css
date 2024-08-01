@@ -178,16 +178,16 @@ tr:hover {
 }
 
 .back-button {
-    position: absolute;
+    position: fixed; /* Change to fixed to keep it at the bottom */
     bottom: 20px;
     left: 20px;
 }
 
 .back-button a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     color: white; /* Change to white */
-    font-size: 32px; /* Increase font size */
+    font-size: 40px; /* Increase font size */
 }
 
 .back-button a:hover {
