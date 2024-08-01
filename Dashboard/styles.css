@@ -159,6 +159,7 @@ tr:hover {
 .scrollable-table-container {
     max-height: 150px; /* Adjust height as needed */
     overflow-y: auto;
+    margin-top: 10px; /* Move the table down by 10 pixels */
 }
 
 .history table {
@@ -177,6 +178,24 @@ tr:hover {
     height: 200px;
 }
 
+.custom-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.custom-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.custom-legend-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
 .back-button {
     position: fixed; /* Change to fixed to keep it at the bottom */
     bottom: 20px;
@@ -185,9 +204,8 @@ tr:hover {
 
 .back-button a {
     text-decoration: none;
-    font-size: 32px;
-    color: white; /* Change to white */
     font-size: 40px; /* Increase font size */
+    color: white; /* Change to white */
 }
 
 .back-button a:hover {
