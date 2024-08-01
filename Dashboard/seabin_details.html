@@ -11,11 +11,11 @@
     <div class="sidebar">
         <h2>Hephaestus</h2>
         <ul>
-            <li><a href="index.html" class="white-link">DASHBOARD</a></li>
-            <li>PROFILE</li>
-            <li>NOTIFICATIONS</li>
-            <li>DEVICES</li>
-            <li>LOGOUT</li>
+            <li><a href="index.html" class="white-link">Dashboard</a></li>
+            <li><a href="#" class="white-link">Profile</a></li>
+            <li><a href="#" class="white-link">Notifications</a></li>
+            <li><a href="#" class="white-link">Devices</a></li>
+            <li><a href="#" class="white-link">Logout</a></li>
         </ul>
     </div>
     <div class="content">
@@ -68,7 +68,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const seabinId = urlParams.get('id');
         document.getElementById('seabinId').innerText = seabinId;
-        
+
         // Chart.js configuration
         const ctx = document.getElementById('seabinChart').getContext('2d');
         const seabinChart = new Chart(ctx, {
