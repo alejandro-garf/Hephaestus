@@ -1,4 +1,4 @@
-# Dashboard UI/UX Design
+# Hephaestus Webapp Prototype
 
 This project serves as a user interface (UI) and user experience (UX) design for a dashboard. It displays various information such as device status, usage statistics, and recent activities using tables and charts. The design includes a sidebar for navigation, a header for the page title, and cards for quick status overviews.
 
